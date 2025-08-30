@@ -1,8 +1,8 @@
 :root {
-    --cinza: #ebebec;
+    --cinza: #EBEBEC;
     --preto: #272727;
-    --rosa: #F06197;
-    --verde: #36B59F;
+    --rosa: #F86197;
+    --verde: #36859F; 
 }
 
 * {
@@ -12,10 +12,5 @@
 }
 
 body {
-    background: var(--cinza);
-}
-
-body, input, textarea, button {
-    font-size: 1rem;
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

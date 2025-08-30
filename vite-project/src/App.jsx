@@ -1,16 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router'
 import './App.css'
-import { Cabecalho, Conteudo } from './components/cabecalho/Cabecalho'
+import { AppContextProvider } from './contexts';
 
 const App = () => {
   return (
-    <>
-      <Cabecalho nomeUsuario="Joana"/>
-      <Conteudo>
-        <h1>Titulo</h1>
-        <p>Texto texto texto</p>
-      </Conteudo>
-    </>
+    <AppContextProvider>
+    <BrowserRouter>
+      <Router /> 
+    </BrowserRouter>
+    </AppContextProvider>
   )
-}
+};
 
 export { App }
